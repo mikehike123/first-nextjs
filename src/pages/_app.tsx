@@ -12,11 +12,7 @@ declare global {
 export default function App({ Component, pageProps }: AppProps) {
   useEffect(() => {
     console.log("GA ID:", process.env.NEXT_PUBLIC_GA_ID);
-    gtag("event", "test_event", {
-      event_category: "test_category",
-      event_label: "test_label",
-      value: 1,
-    });
+
     // Add the GA4 script to the head
     const script = document.createElement("script");
     script.async = true;
@@ -30,6 +26,13 @@ export default function App({ Component, pageProps }: AppProps) {
     }
     gtag("js", new Date());
     gtag("config", process.env.NEXT_PUBLIC_GA_ID);
+
+    // Test event after gtag is defined
+    gtag("event", "test_event", {
+      event_category: "test_category",
+      event_label: "test_label",
+      value: 1,
+    });
 
   }, []);
 
