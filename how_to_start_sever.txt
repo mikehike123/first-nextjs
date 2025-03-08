@@ -1,0 +1,33 @@
+dev:
+Command: next dev
+Usage: Starts the Next.js development server. Use this command during development to see live changes.
+Run it with:
+npm run dev
+Copy
+Insert
+
+build:
+Command: next build
+Usage: Compiles the application for production. This command generates an optimized build of your application.
+Run it with:
+npm run build
+Copy
+Insert
+
+start:
+Command: next start
+Usage: Starts the Next.js server in production mode. This is used after running next build.
+Run it with:
+npm start
+Copy
+Insert
+
+lint:
+Command: next lint
+Usage: Runs ESLint to check for code quality and style issues.
+Run it with:
+npm run lint
+Copy
+Insert
+
+How to Start the Development S
