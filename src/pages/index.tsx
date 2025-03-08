@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 
 interface Residence {
@@ -524,8 +524,8 @@ const BillionairesApp = () => {
             )}
           </div>
         </div>
-
       </div>
+      <SpeedInsights />
     </>
   );
 
