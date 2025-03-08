@@ -11,6 +11,7 @@ declare global {
 
 export default function App({ Component, pageProps }: AppProps) {
   useEffect(() => {
+    console.log("GA ID:", process.env.NEXT_PUBLIC_GA_ID);
     // Add the GA4 script to the head
     const script = document.createElement("script");
     script.async = true;
